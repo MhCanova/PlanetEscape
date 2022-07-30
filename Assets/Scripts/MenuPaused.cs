@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuPaused : MonoBehaviour
 {
     [SerializeField] Canvas pauseMenuCanvas;
+    [SerializeField] Canvas notificationCanvas;
 
     void Awake() 
     {
@@ -13,8 +14,7 @@ public class MenuPaused : MonoBehaviour
     }
     void Start()
     {
-        
-        
+        StartCoroutine(notificationPopup());
     }
 
     public void GoMainMenu()
@@ -25,6 +25,7 @@ public class MenuPaused : MonoBehaviour
     public void PauseGame()
     {
         pauseMenuCanvas.enabled = true;
+        notificationCanvas.enabled = false;
         Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -36,5 +37,10 @@ public class MenuPaused : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    
+    IEnumerator notificationPopup()
+    {
+        yield return new WaitForSeconds (5);
+        notificationCanvas.enabled = false;
+    }
+
 }
