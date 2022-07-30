@@ -7,15 +7,19 @@ public class MenuPaused : MonoBehaviour
 {
     [SerializeField] Canvas pauseMenuCanvas;
 
-    void Start()
+    void Awake() 
     {
         pauseMenuCanvas.enabled = false;
     }
-
-    public void QuitGame()
+    void Start()
     {
-        Application.Quit();
-        Debug.Log("You quit the game");
+        
+        
+    }
+
+    public void GoMainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void PauseGame()

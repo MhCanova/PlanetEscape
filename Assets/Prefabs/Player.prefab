@@ -443,6 +443,8 @@ MonoBehaviour:
   levelLoadDelay: 1.5
   sucess: {fileID: 8300000, guid: 80e43fdf4e043234d989aba990d184d8, type: 3}
   crash: {fileID: 8300000, guid: 940d381d593f08249b0e09b7eabd0462, type: 3}
+  successCanvas: {fileID: 4543285966167408744, guid: f291af21aa1b80e47a8ba50b56011ba8, type: 3}
+  followCam: {fileID: 0}
   sucessParticles: {fileID: 4939474964827983651}
   crashParticles: {fileID: 2602352473650664440}
 --- !u!82 &3331742246901304959

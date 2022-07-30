@@ -7,6 +7,8 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] float levelLoadDelay = 1.5f;
     [SerializeField] AudioClip sucess;
     [SerializeField] AudioClip crash;
+    [SerializeField] GameObject successCanvas;
+    [SerializeField] GameObject followCam;
 
     [SerializeField] ParticleSystem sucessParticles;
     [SerializeField] ParticleSystem crashParticles;
@@ -19,14 +21,16 @@ public class CollisionHandler : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        successCanvas.SetActive(false);
+        followCam.SetActive(true);
     }
 
     void Update()
     {
-        RespondToDebugKeys();
+        //RespondToDebugKeys();
     }
 
-    void RespondToDebugKeys()
+    /*void RespondToDebugKeys()
         {
             if (Input.GetKeyDown(KeyCode.L))
             {
@@ -36,7 +40,7 @@ public class CollisionHandler : MonoBehaviour
             {
                 collisionDisabled = !collisionDisabled; // toggle collision bool
             }
-        }
+        }*/
     
     void OnCollisionEnter(Collision other) 
     {
@@ -48,12 +52,26 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("This thing is friendly");
                 break;
             case "Finish":
+                StartFinishSequence();
+                break;
+            case "Success":
                 StartSuccessSequence();
                 break;
             default:
                 StartCrashSequence();
                 break;
         }
+    }
+
+    void StartFinishSequence()
+    {
+        isTransitioning = true;
+        audioSource.Stop();
+        audioSource.PlayOneShot(sucess);
+        sucessParticles.Play();
+        GetComponent<Movement>().enabled = false;
+        Invoke("LoadNextLevel", levelLoadDelay);
+        followCam.SetActive(false);
     }
 
     void StartSuccessSequence()
@@ -63,7 +81,8 @@ public class CollisionHandler : MonoBehaviour
         audioSource.PlayOneShot(sucess);
         sucessParticles.Play();
         GetComponent<Movement>().enabled = false;
-        Invoke("LoadNextLevel", levelLoadDelay);
+        successCanvas.SetActive(true);
+        followCam.SetActive(false);
     }
 
     void StartCrashSequence()
@@ -73,6 +92,7 @@ public class CollisionHandler : MonoBehaviour
     audioSource.PlayOneShot(crash);
     crashParticles.Play();
     GetComponent<Movement>().enabled = false;
+    followCam.SetActive(false);
     Invoke("ReloadLevel", levelLoadDelay);
 }
 
