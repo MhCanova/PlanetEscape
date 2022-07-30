@@ -45,6 +45,8 @@ public class Movement : MonoBehaviour
     }
     void StartThrusting()
     {
+        if(Time.timeScale == 0) return; 
+
         myRigidBody.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
         animator.SetBool("IsFloating", true);
         if (!audioSource.isPlaying)

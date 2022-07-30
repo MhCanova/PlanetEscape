@@ -1498,9 +1498,57 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 864264287906553183, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 864264287906553183, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 864264287906553183, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 864264287906553183, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 864264287906553183, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 864264287906553183, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2354008321317732372, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
       propertyPath: m_text
       value: "CONGRATS! \n\n\nYou beat the game, thank you for playing."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697696646006727425, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697696646006727425, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697696646006727425, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697696646006727425, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697696646006727425, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697696646006727425, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5549723028786328941, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
       propertyPath: m_IsActive
@@ -1553,6 +1601,34 @@ PrefabInstance:
     - target: {fileID: 6865093957580335177, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
       propertyPath: m_Name
       value: UI Gameplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995018395136216673, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995018395136216673, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995018395136216673, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995018395136216673, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995018395136216673, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995018395136216673, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835705146201915047, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
@@ -2130,6 +2206,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1830243136}
     m_Modifications:
+    - target: {fileID: 4470892839691750660, guid: 7e778c92f24f8244b9271b8e786667db, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4470892840207060778, guid: 7e778c92f24f8244b9271b8e786667db, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

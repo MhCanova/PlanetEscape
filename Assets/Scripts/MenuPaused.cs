@@ -16,25 +16,32 @@ public class MenuPaused : MonoBehaviour
     {
         StartCoroutine(notificationPopup());
     }
+    void Update() 
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseGame();
+        }
+        
+    }
 
     public void GoMainMenu()
     {
+        PauseService.UnPause();
         SceneManager.LoadScene(0);
     }
 
-    public void PauseGame()
+    void PauseGame()
     {
         pauseMenuCanvas.enabled = true;
         notificationCanvas.enabled = false;
-        Time.timeScale = 0;
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        PauseService.Pause();
     }
 
-    public void ContinueGame()
+    void ContinueGame()
     {
         pauseMenuCanvas.enabled = false;
-        Time.timeScale = 1;
+        PauseService.UnPause();
     }
 
     IEnumerator notificationPopup()
@@ -42,5 +49,5 @@ public class MenuPaused : MonoBehaviour
         yield return new WaitForSeconds (5);
         notificationCanvas.enabled = false;
     }
-
+    
 }
