@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class MenuStart : MonoBehaviour
 {
     [SerializeField] Canvas startMenuCanvas;
+    [SerializeField] Canvas controllsCanvas;
 
-    void Start()
+    void Awake()
     {
         startMenuCanvas.enabled = true;
+        controllsCanvas.enabled = false;
     }
 
     public void QuitGame()
@@ -21,5 +23,17 @@ public class MenuStart : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void ControllsMenuButton()
+    {
+        startMenuCanvas.enabled = false;
+        controllsCanvas.enabled = true;
+    }
+
+    public void ControllsBackButton()
+    {
+        controllsCanvas.enabled = false;
+        startMenuCanvas.enabled = true;
     }
 }
