@@ -1753,11 +1753,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2002701791430904230, guid: 8bfb4b7ce5f3a4a4d9f81ddf253d08a3, type: 3}
   m_PrefabInstance: {fileID: 749657578}
   m_PrefabAsset: {fileID: 0}
---- !u!223 &769143792 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 2982486956930559512, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-  m_PrefabInstance: {fileID: 1165335248}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &796792756
 GameObject:
   m_ObjectHideFlags: 0
@@ -2790,26 +2785,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 390445562699409597, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_text
-      value: Main Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 390445562699409597, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_fontSize
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 390445562699409597, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 823901304990789739, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_fontSize
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 823901304990789739, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 40
-      objectReference: {fileID: 0}
     - target: {fileID: 864264287906553183, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2834,34 +2809,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2538579354898216423, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3071707158090308322, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_fontSize
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 3071707158090308322, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 3467142730958598363, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3467142730958598363, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 1920
-      objectReference: {fileID: 0}
-    - target: {fileID: 3467142730958598363, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 1080
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002227085944974604, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -90
-      objectReference: {fileID: 0}
     - target: {fileID: 4697696646006727425, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2885,18 +2832,6 @@ PrefabInstance:
     - target: {fileID: 4697696646006727425, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4993527183091086733, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_Name
-      value: MainMenuButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712982359880016799, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -110
-      objectReference: {fileID: 0}
-    - target: {fileID: 6865093956405026209, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6865093957580335176, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
       propertyPath: m_RootOrder
@@ -2970,26 +2905,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7906069326687322143, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7906069326687322143, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 1920
-      objectReference: {fileID: 0}
-    - target: {fileID: 7906069326687322143, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 1080
-      objectReference: {fileID: 0}
-    - target: {fileID: 8835705146201915047, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9209617849764114565, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
-      propertyPath: pauseMenuCanvas
-      value: 
-      objectReference: {fileID: 769143792}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
 --- !u!1 &1165335249 stripped
