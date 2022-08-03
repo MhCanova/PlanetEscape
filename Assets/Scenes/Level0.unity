@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.13651487, g: 0.14244592, b: 0.16767347, a: 1}
+  m_IndirectSpecularColor: {r: 0.13582262, g: 0.1416868, b: 0.16751117, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2846,6 +2846,18 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 3467142730958598363, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3467142730958598363, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 3467142730958598363, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 4002227085944974604, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -90
@@ -2957,6 +2969,18 @@ PrefabInstance:
     - target: {fileID: 6995018395136216673, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906069326687322143, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906069326687322143, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906069326687322143, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 8835705146201915047, guid: 99cde4a15201df441baa63dc20b67b31, type: 3}
       propertyPath: m_IsActive
